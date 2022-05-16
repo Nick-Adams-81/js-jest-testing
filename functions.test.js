@@ -24,4 +24,10 @@ test("User should be Nick Adams object", () => {
     expect(functions.createUser()).toEqual({ firstname: "Nick", lastname: "Adams"})
 })
 
+test("should be under 1600", () => {
+    const load1 = 800,load2 = 700
+    expect(load1 + load2).toBeLessThan(1600)
+})
+
+
 
