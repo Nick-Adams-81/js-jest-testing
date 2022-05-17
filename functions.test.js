@@ -1,3 +1,4 @@
+// imporing functions to be tested
 const functions = require("./functions")
 
 test("adds 2 + 2 to equal 4", () => {
@@ -31,5 +32,17 @@ test("should be under 1600", () => {
 
 test("there is no I in team", () => {
     expect("team").not.toMatch(/i/ig)
+})
+
+test("Admin should contain Admin", () => {
+    expect(functions.usernames).toContain("admin")
+})
+
+test("user fetched name should be Leanne Graham", () => {
+    expect.assertions(1)
+    return functions.fetchUser()
+    .then(data => {
+        expect(data.name).toEqual("Leanne Graham")
+    })
 })
 
