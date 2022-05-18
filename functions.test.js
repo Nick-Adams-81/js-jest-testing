@@ -9,6 +9,10 @@ test("adds 2 + 2 to not equal 5", () => {
     expect(functions.add(2, 2,)).not.toBe(5)
 })
 
+test("subtracts 5 from 10 to equal 5", () => {
+    expect(functions.subtract(10, 5)).toBe(5)
+})
+
 test("should be null", () => {
     expect(functions.isNull()).toBeNull()
 })
