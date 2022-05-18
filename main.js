@@ -1,5 +1,5 @@
-const axios = require("axios")
+const functions = require("./functions")
 
-axios.get("https://jsonmock.hackerrank.com/api/moviesdata/search/?Title=substr")
-.then(res => res.data)
-.then(data => console.log(data))
+
+console.log(functions.add(50, 23))
+console.log(functions.subtract(9, 3))
