@@ -21,7 +21,8 @@ const functions = {
             .then(res => res.data)
             .catch(err => console.log(err)),
 
-    subtract: (a, b) => a - b 
+    subtract: (a, b) => a - b,
+    reverseString: (str) => str.split("").reverse().join("")
 
 }
 

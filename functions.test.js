@@ -42,6 +42,10 @@ test("Admin should contain Admin", () => {
     expect(functions.usernames).toContain("admin")
 })
 
+test("should return olleh when hello is passed in", () => {
+    expect(functions.reverseString("hello")).toEqual("olleh")
+})
+
 test("user fetched name should be Leanne Graham", () => {
     expect.assertions(1)
     return functions.fetchUser()
