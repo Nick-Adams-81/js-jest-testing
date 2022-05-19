@@ -24,7 +24,17 @@ const functions = {
     subtract: (a, b) => a - b,
     reverseString: (str) => str.split("").reverse().join(""),
     removeVowels: (str) => str.replace(/[aeiou]/ig, ""),
-    isPalindrome: (str) => str === str.split("").reverse().join("")
+    isPalindrome: (str) => str === str.split("").reverse().join(""),
+
+    user: {
+        name: "Nick Adams",
+        address: "3403 McNeil sstreet",
+        city: "Dallas",
+        state: "Texas",
+        zip: "75227",
+        jobs: ["software engineer", "poker dealer"]
+    },
+
 
 }
 
