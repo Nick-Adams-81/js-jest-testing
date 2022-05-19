@@ -58,6 +58,10 @@ test("Should return name of Nick Adams", () => {
     expect(functions.user.name).toEqual("Nick Adams")
 })
 
+test("Should return city of Dallas", () => {
+    expect(functions.user.city).toEqual("Dallas")
+})
+
 test("user fetched name should be Leanne Graham", () => {
     expect.assertions(1)
     return functions.fetchUser()
