@@ -22,7 +22,8 @@ const functions = {
             .catch(err => console.log(err)),
 
     subtract: (a, b) => a - b,
-    reverseString: (str) => str.split("").reverse().join("")
+    reverseString: (str) => str.split("").reverse().join(""),
+    removeVowels: (str) => str.replace(/[aeiou]/ig, "")
 
 }
 

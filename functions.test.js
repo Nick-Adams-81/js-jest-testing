@@ -46,6 +46,10 @@ test("should return olleh when hello is passed in", () => {
     expect(functions.reverseString("hello")).toEqual("olleh")
 })
 
+test("should return hll wrld when passed hello", () => {
+    expect(functions.removeVowels("hello world")).toEqual("hll wrld")
+})
+
 test("user fetched name should be Leanne Graham", () => {
     expect.assertions(1)
     return functions.fetchUser()
