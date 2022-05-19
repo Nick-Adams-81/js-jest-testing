@@ -23,7 +23,8 @@ const functions = {
 
     subtract: (a, b) => a - b,
     reverseString: (str) => str.split("").reverse().join(""),
-    removeVowels: (str) => str.replace(/[aeiou]/ig, "")
+    removeVowels: (str) => str.replace(/[aeiou]/ig, ""),
+    isPalindrome: (str) => str === str.split("").reverse().join("")
 
 }
 

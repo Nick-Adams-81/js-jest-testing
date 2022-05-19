@@ -50,6 +50,10 @@ test("should return hll wrld when passed hello", () => {
     expect(functions.removeVowels("hello world")).toEqual("hll wrld")
 })
 
+test("Should return true when bob is passed in", () => {
+    expect(functions.isPalindrome("bob")).toBe(true)
+})
+
 test("user fetched name should be Leanne Graham", () => {
     expect.assertions(1)
     return functions.fetchUser()
