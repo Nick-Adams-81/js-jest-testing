@@ -1,3 +1,4 @@
+const { countVowels } = require("./functions")
 const functions = require("./functions")
 
 
@@ -10,3 +11,5 @@ console.log(functions.reverseString("hello world"))
 for(let i = 0; i < 10; i++) {
     console.log(functions.fibonachi(i))
 }
+
+console.log(countVowels("hello world"))

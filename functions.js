@@ -45,6 +45,11 @@ const functions = {
         }
 
         return a
+    },
+
+    countVowels: (str) => {
+        let count = str.match(/[aeiou]/ig).length
+        return count
     }
 
 
