@@ -1,4 +1,4 @@
-const { countVowels } = require("./functions")
+const { countVowels, fibonachi } = require("./functions")
 const functions = require("./functions")
 
 

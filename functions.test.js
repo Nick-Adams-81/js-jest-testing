@@ -65,6 +65,8 @@ test("Should return city of Dallas", () => {
 test("Should return 3 when passed hello world", () => {
     expect(functions.countVowels("hello world")).toEqual(3)
 })
+
+
 test("user fetched name should be Leanne Graham", () => {
     expect.assertions(1)
     return functions.fetchUser()
