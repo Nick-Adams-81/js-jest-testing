@@ -66,6 +66,18 @@ test("Should return 3 when passed hello world", () => {
     expect(functions.countVowels("hello world")).toEqual(3)
 })
 
+test("Should equal 9 when passed 5 and 4", () => {
+    expect(functions.sum(5, 4)).toEqual(9)
+})
+
+test("should equal 15 when passed 4, 5, and 6", () => {
+    expect(functions.sum(4, 5, 6)).toEqual(15)
+})
+
+test("should equal 25 when passed 3, 4, 5, 6, 7", () => {
+    expect(functions.sum(3, 4, 5, 6, 7)).toEqual(25)
+})
+
 
 test("user fetched name should be Leanne Graham", () => {
     expect.assertions(1)
